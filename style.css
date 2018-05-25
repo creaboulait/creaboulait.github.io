@@ -1,22 +1,28 @@
+/*Styling for all in Grid*/
+.grid {
+	font-family: Verdana;
+	background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/regal.png);
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
+
 /*Styling for Header*/
 header {
-	background-color: mediumaquamarine;
 	border: dotted 2px white;
+	background-color: mediumaquamarine;
 	font-family: 'Pacifico', cursive;
-	margin-bottom: 10px;
-	text-align: center;
-	width:100%;
+	width: 100%;
+	margin: 5px auto;
+	text-align: right;
 }
 
 header img {
 	width: 200px;
-	border-radius: 100px;
-	padding-top: 10px;
-}
-
-#banner, header img {
-	display: inline-block;
-	justify-content: space-around;
+	height: 100%;
+	border-radius: 50px;
+	float: left;
+	margin: 5px;
 }
 
 #strike-through {
@@ -24,22 +30,15 @@ header img {
 	font-size: 20px;
 }
 
-/*.fixed {
-	position fixed;
-	left: 0;
-	width: 100%;
-}*/
-
-/*Styling for Nav bar*/
+/*Styling for Navbar*/
 nav {
-	font-family: Verdana;
-	text-align: center;
 	background-color: lightcoral;
 	border-radius: 10px;
-	margin-top:-5px;
-	margin-bottom: 10px;
 	width: 100%;
+	margin: 5px auto;
+	text-align: center;
 }
+
 nav p {
 	display: inline-block;
 	text-transform: uppercase;
@@ -47,43 +46,15 @@ nav p {
 	padding-right: 20px;
 }
 
-/*Styling for Body*/
-body {
-  line-height: 1.4em;
-  background-image: url(https://www.toptal.com/designers/subtlepatterns/patterns/regal.png);
-}
-
-.main-content {
-	display: block;
-	float: left;
-	width: 70vw;
-	height:1000px;
-}
-
-article, section {
-	font-family: Verdana;
-	text-align: center;
+/*Styling for Article*/
+article {
 	border: dotted 2px #F08080;
 	float: left;
-	margin: 5px auto;
-
-}
-
-article {
 	width: 100%;
+	margin: 5px auto;
 }
-
 
 /*Styling for Special words*/
-h2, strong {
-	color: lightcoral;
-}
-
-em {
-	color: mediumaquamarine;
-}
-
-/*Styling for Headers*/
 h2 {
 	font-size: 30px;
 	font-family: 'The Girl Next Door', cursive;
@@ -95,9 +66,27 @@ h3 {
 	color: #F04624;
 	font-family: 'The Girl Next Door', cursive;
 }
+h2, strong {
+	color: lightcoral;
+}
 
+em {
+	color: mediumaquamarine;
+}
 
-/*Styling for Tables*/
+/*Styling for Section*/
+section {
+	border: 2px dotted #F08080;
+	width: 70vw;
+	float: left;
+	margin: 5px auto;
+}
+
+section img {
+	border-radius: 20px;
+}
+
+/*Styling for Tables in Section*/
 .table-center {
 	margin-left:auto; 
     margin-right:auto;
@@ -112,21 +101,17 @@ th {
 	color: #F04624;
  }
 
-
-img {
-	border-radius: 20px;
+/*Styling for Sidebar*/
+aside {
+	border: 2px dotted lightcoral;
+	width: 25vw;
+	float: right;
+	margin: 5px auto;
 }
 
-/*Styling for Sidebar*/
-.container {
-	width: 27%;
-	height: 955px;
-	border: 2px dotted lightcoral;
-	float:right;
+section, aside {
 	display: inline-block;
-	text-align: center;
-	margin: 5px auto;
-	box-sizing: border-box;
+
 }
 
 aside img {
@@ -134,21 +119,17 @@ aside img {
 	height: 200px;
 	border-radius: 100px;
 	display: block;
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom: 10px;
-	position: relative;
-	z-index: 0;
+	margin: 5px auto;
 }
 
 /*Styling for Footer*/
 footer {
-	font-family: Verdana;
-	text-align: center;
 	background-color: rgba(211,211,211, 0.7);
 	border: dotted 2px white;
+	width: 100%;
+	margin: 5px auto;
 	clear: both;
-	margin-top: -10px;
+	text-align: center;
 }
 
 footer h3 {
@@ -158,13 +139,10 @@ footer h3 {
 	display: inline-block;
 	padding-left: 10px;
 	padding-right: 10px;
-	clear: both;
 }
 
 /*Styling for Back to Top Button*/
 #back-top {
-	font-family: Verdana;
-	text-align: center;
 	background-color: lightcoral;
 	border: 2px solid rgb(211,211,211);
 	position: fixed;
@@ -172,3 +150,12 @@ footer h3 {
 	right: 20px;
 }
 
+/*For mobile users*/
+@media(max-width: 480px) {
+	section {
+		width: 100%;
+	}
+	aside {
+		width: 100%;
+	}
+}
